@@ -56,6 +56,7 @@ body {
   position: relative;
   left: 120px;
   bottom: 330px;
+  grid-gap: 250px;
 }
 
 .projectGridArea {
@@ -88,7 +89,6 @@ body {
 
 #project2 {
   grid-area: project2;
- 
 }
 
 #project3 {
@@ -103,9 +103,14 @@ body {
   grid-area: project5;
 }
 
-#project2, #project3, #project4, #project5 {
+#project2, #project3{
   position: relative;
-  top: 200px;
+  bottom: 100px;
+}
+
+#project4, #project5{
+  position: relative;
+  bottom: 100px;
 }
 
 .about{
@@ -119,34 +124,37 @@ body {
   padding: 30px;
   position: relative;
   left: 200px;
-  bottom: 60px;
+  bottom: 120px;
   font-size: 30px;
 }
 
-/* .work{
-  height:fit-content;
-} */
+.work{
+  height: 1500px;
+}
 
+.card{
+  background-color: wheat;
+}
 
-@media screen and (max-width: 700px) {
-  body{
-    background-color: black;
-  }
-  .page-section{
-    width: 100%;
+.btn:hover{
+  box-shadow: 10px 10px black;
 }
-header{
-  font-size: 80%;
+
+a:hover {
+  background-color: white;
 }
-  .projectGridArea{
-    width: 50%;
-    float: left;
-  }
-  .vertical{
-    font-size: 150%;
-    width: 75%;
-    border-style: none;
-  }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 100px;
 }
+
+.footer p {
+  color: red;
+}
+
 
 
